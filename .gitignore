@@ -3,3 +3,6 @@
 
 # Ada Library Information
 *.ali
+
+# prepros
+prepros-6.config

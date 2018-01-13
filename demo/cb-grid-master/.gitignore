@@ -1,0 +1,8 @@
+# Object file
+*.o
+
+# Ada Library Information
+*.ali
+
+# prepros
+prepros-6.config

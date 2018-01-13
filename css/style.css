@@ -1,4 +1,9 @@
 /* CSS GRID */
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
@@ -6,8 +11,80 @@
   /* .class { grid-column: col-start 1 / span 12 } */
 }
 
+.wrap {
+  width: 1170px;
+  margin: 0 auto;
+  background-color: red;
+}
+
 .header {
+  grid-column: col-start / span 12;
   background-color: #2A2A2A;
+  height: 150px;
+  grid-row: 1 / 2;
+}
+
+.header-inside {
+  display: flex;
+}
+
+.logo {
+  grid-column: col-start  3 / span 12;
+  grid-row: 1 / 2;
+  margin: 15px 0;
+}
+
+.top-contact {
+  background-color: red;
+  grid-column: col-start  5 / span 9;
+  grid-row: 1 / 2;
+  height: 75px;
+}
+
+.nav {
+  background-color: yellow;
+  grid-column: col-start  3 / span 8;
+  grid-row: 1 / 2;
+  height: 50px;
+  position: relative;
+  z-index: 999;
+  top: 125px;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+@media (max-width: 500px) {
+  .logo {
+    grid-column: col-start  5 / span 7;
+    grid-row: 1 / 2;
+    margin: 15px 0;
+  }
+  .top-contact {
+    background-color: red;
+    grid-column: col-start  4 / span 7;
+    grid-row: 2 / 3;
+    height: 75px;
+  }
+  .nav {
+    grid-row: 3 / 5;
+    grid-column: col-start  4 / span 7;
+    position: relative;
+    height: 50px;
+    top: 0;
+  }
+  .nav li {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

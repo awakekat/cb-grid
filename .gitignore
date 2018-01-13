@@ -6,3 +6,7 @@
 
 # prepros
 prepros-6.config
+
+# map
+css/style.css.map
+css/demo\.css

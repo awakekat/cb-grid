@@ -13,3 +13,8 @@ Fonts Used:
 
 Images Used:
 - www.allfreephotos.net
+
+Apps Used
+- Prepros for Sass compiling
+- Atom Code Editor
+- Gitkraken for Github management

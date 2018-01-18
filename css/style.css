@@ -68,7 +68,6 @@ body {
 .nav ul li {
   line-height: 50px;
   padding: 0 10px;
-  padding-left: 10px;
 }
 
 .nav ul li:first-child {
@@ -82,7 +81,7 @@ body {
   margin-left: auto;
 }
 
-.nav ul a {
+.nav ul li a {
   color: #2A2A2A;
   text-decoration: none;
 }

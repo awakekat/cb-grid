@@ -1,8 +1,8 @@
-@mixin button ($c:$yellow, $h, $w, $c:$black, $p) {
-  background-color: $c
-  height: $h
-  width: $w
-  color: $c
-  padding: $p
-  
-}
+// Optional values MUST be last
+@mixin button($p, $w, $h, $bgc: $yellow, $c: $white)
+	padding: $p
+	width: $w
+	height: $h
+	background-color: $bgc
+	color: $c
+	

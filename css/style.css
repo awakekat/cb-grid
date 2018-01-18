@@ -1,90 +1,160 @@
+@charset "UTF-8";
 /* CSS GRID */
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
-}
+  font-family: "Open Sans", sans-serif; }
 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
   /* All have a start line named "col-start" */
-  /* .class { grid-column: col-start 1 / span 12 } */
-}
+  /* .class { grid-column: col-start 1 / span 12 } */ }
 
 .flex {
-  display: flex;
-}
+  display: flex; }
 
 .wrap {
   width: 1170px;
   margin: 0 auto;
-  background-color: red;
-}
+  background-color: red; }
 
 .header {
-  grid-column: col-start / span 12;
+  grid-column: col-start/span 12;
   background-color: #2A2A2A;
   height: 150px;
-  grid-row: 1 / 2;
-}
+  grid-row: 1/2; }
 
 .header-inside {
-  display: flex;
-}
+  display: flex; }
 
 .logo {
-  grid-column: col-start  3 / span 12;
-  grid-row: 1 / 2;
-  margin: 15px 0;
-}
+  grid-column: col-start 3/span 12;
+  grid-row: 1/2;
+  margin: 15px 0; }
 
 .top-contact {
-  background: #ffffff;
-  grid-column: col-start  5 / span 9;
-  grid-row: 1 / 2;
-  height: 75px;
-}
+  grid-column: col-start 6/span 9;
+  grid-row: 1/2;
+  list-style-type: none;
+  margin-top: 48px; }
+  .top-contact li {
+    display: inline-block;
+    margin-right: 35px; }
+
+.location {
+  border-left: 1px solid #ccc;
+  padding-left: 8px;
+  height: 35px;
+  font-size: 13px; }
+  .location span {
+    text-transform: uppercase;
+    color: #F6C446;
+    position: relative;
+    left: -11px; }
+  .location:before {
+    content: "";
+    font-family: "FontAwesome";
+    color: #F6C446;
+    position: relative;
+    left: -30px;
+    top: 10px;
+    font-size: 16px; }
+  .location p {
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+    font-size: 12px; }
+
+.hours {
+  border-left: 1px solid #ccc;
+  padding-left: 8px;
+  height: 39px;
+  font-size: 13px; }
+  .hours span {
+    text-transform: uppercase;
+    color: #F6C446;
+    position: relative;
+    left: -17px; }
+  .hours:before {
+    content: "";
+    font-family: "FontAwesome";
+    color: #F6C446;
+    position: relative;
+    left: -35px;
+    top: 8px;
+    font-size: 16px; }
+  .hours p {
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+    font-size: 12px; }
+
+.phone {
+  border-left: 1px solid #ccc;
+  padding-left: 10px;
+  height: 35px;
+  font-size: 13px; }
+  .phone span {
+    text-transform: uppercase;
+    color: #F6C446;
+    position: relative;
+    left: -14px; }
+  .phone:before {
+    content: "";
+    font-family: "FontAwesome";
+    color: #F6C446;
+    position: relative;
+    left: -35px;
+    top: 10px;
+    font-size: 16px; }
+  .phone p {
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+    font-size: 12px; }
+
+.get-quote {
+  background-color: #F6C446;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 25px;
+  margin-left: 20px; }
 
 .nav {
   background-color: #F6C446;
-  grid-column: col-start  3 / span 5;
-  grid-row: 1 / 2;
+  grid-column: col-start 3/span 5;
+  grid-row: 1/2;
   height: 50px;
   position: relative;
   z-index: 999;
   top: 125px;
   font-size: 12px;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .nav ul li {
+      line-height: 50px;
+      padding: 0 10px; }
+      .nav ul li:first-child {
+        padding-left: 20px; }
+      .nav ul li.last {
+        background-color: #FFFFFF;
+        width: 50px;
+        text-align: center;
+        margin-left: auto; }
+      .nav ul li a {
+        color: #2A2A2A;
+        text-decoration: none; }
 
-.nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav ul li {
-  line-height: 50px;
-  padding: 0 10px;
-}
-
-.nav ul li:first-child {
-  padding-left: 20px;
-}
-
-.nav ul li.last {
-  background-color: #FFFFFF;
-  width: 50px;
-  text-align: center;
-  margin-left: auto;
-}
-
-.nav ul li a {
-  color: #2A2A2A;
-  text-decoration: none;
-}
+.get-quote {
+  grid-column: col-start 10/span 11;
+  grid-row: 1/2;
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */
